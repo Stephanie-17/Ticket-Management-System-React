@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@import "./variables.css";
+
+body {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.hero {
+	position: relative;
+	overflow: hidden;
+}
+
+.hero::after {
+	content: "";
+	position: absolute;
+	bottom: -1px; 
+	left: 0;
+	width: 100%;
+	height: clamp(100px, 15vw, 200px);
+	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' viewBox='0 0 1440 320'><path fill='%23ffffff' d='M0,256L48,240C96,224,192,192,288,186.7C384,181,480,203,576,208C672,213,768,203,864,192C960,181,1056,171,1152,154.7C1248,139,1344,117,1392,106.7L1440,96V320H0Z'/></svg>");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100% 100%;
+	pointer-events: none;
+}
+@media (min-width: 1000px) {
+	.hero::after {
+		height: 180px;
+	}
+}

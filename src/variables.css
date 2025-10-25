@@ -1,0 +1,27 @@
+:root {
+  /*COLORS */
+ 
+  --color-primary: #1e3a8a; /* Deep blue (main brand color) */
+  --color-primary-light: #3b82f6; /* Accent blue for buttons / links */
+  
+  --color-text: #111827; /* Main text */
+  --color-text-secondary: #fff;
+  --color-text-light: #6b7280; /* Muted text (subtitles, placeholders) */
+ 
+ 
+  /*  TYPOGRAPHY  */
+  --font-family-base: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+
+
+  /*  SPACING  */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+
+  /*SHADOWS & RADII  */
+  
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
