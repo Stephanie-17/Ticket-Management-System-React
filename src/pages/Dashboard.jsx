@@ -4,8 +4,10 @@ import { useAuth } from "../context/useAuth";
 import { Link } from "react-router-dom";
 
 const Dashboard = () => {
+
 	const { tickets } = useTicket();
 	const { user } = useAuth();
+	
 	return (
 		<main className="max-w-7xl mx-auto bg-white rounded-2xl shadow-lg p-8 space-y-(--space-lg) mt-(--space-lg)">
 			<h1 className="text-4xl font-extrabold text-gray-900 mb-4 sm:mb-0">
