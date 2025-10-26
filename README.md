@@ -67,7 +67,14 @@ No external APIs are required — this app runs entirely in the browser using lo
 - LandingPage	          /	    
 - Sign Up/Login 	   /sign-up	
 - Dashboard	        /dashboard	
-- Ticket Management 	/tickets	
+- Ticket Management 	/tickets
+|Page               |   Route     |
+|-------------------|-------------|
+|LandingPage        |     /       |
+|AuthForm           |   /sign-up  |
+|Dashboard          |  /dashboard |
+|Ticekt Management  | /tickets
+
 
 
 ## Author
