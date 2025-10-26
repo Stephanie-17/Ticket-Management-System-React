@@ -66,7 +66,7 @@ const TicketManagement = () => {
 				) : (
 					tickets.map((ticket) =>
 						editId === ticket.id ? (
-							<div className="w-[60%] border flex flex-col p-8 rounded-md gap-(--space-md) shadow">
+							<div key={ticket.id} className="w-[60%] border flex flex-col p-8 rounded-md gap-(--space-md) shadow">
 								<div className="flex items-start flex-col gap-2">
 									<label className="font-semibold text-xl" htmlFor="title">
 										Title:

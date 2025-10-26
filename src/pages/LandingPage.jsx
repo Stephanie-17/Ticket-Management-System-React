@@ -1,8 +1,9 @@
 import React from "react";
 import FeatureCard from "../components/FeatureCard";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const LandingPage = () => {
+	const navigate = useNavigate()
 	const features = [
 		{
 			id: 1,
@@ -26,7 +27,7 @@ const LandingPage = () => {
 	return (
 		<main>
 			{/* Hero Section */}
-			<section className=" hero bg-linear-to-br from-[#4a90e2] to-[#7b68ee] p-2 flex flex-col items-center justify-center h-[90vh] -z-2 gap-(--space-xl)">
+			<section className=" hero bg-linear-to-br from-[#4a90e2] to-[#7b68ee] p-2 flex flex-col items-center justify-center h-[90vh]  gap-(--space-xl)">
 				<h1 className="text-(--color-text-secondary) font-extrabold text-[32px] text-center z-2 mt-(--space-md)  sm:text-5xl md:text-6xl max-w-[80%] ">
 					Simplify Support. Resolve Faster. Delight Every Customer.
 				</h1>
@@ -38,11 +39,11 @@ const LandingPage = () => {
 					<b>Empower your team</b> to deliver exceptional support experiences
 					while reducing response times and eliminating workflow friction.
 				</p>
-				<Link to="/sign-up">
-					<button className="text-white bg-(--color-primary) px-(--space-xl) py-(--space-sm) rounded-md font-bold cursor-pointer">
+				
+					<button onClick={()=>navigate('/sign-up')} className="text-white bg-(--color-primary) px-(--space-xl) py-(--space-sm) rounded-md font-bold cursor-pointer z-1150">
 						Get Started
 					</button>
-				</Link>
+				
 
 				{/* Decorative Circles */}
 				<div className="w-16 h-16 bg-[#50E3C2] opacity-30 absolute rounded-full left-2  top-1/4 lg:w-24 lg:h-24"></div>
@@ -60,9 +61,9 @@ const LandingPage = () => {
 				</header>
 				<ul className="list-none flex flex-col gap-(--space-sm) lg:gap-(--space-lg) justify-center md:flex-row md:flex-wrap mb-8">
 					{features.map((feature) => (
-						<li>
+						<li 	key={feature.id}>
 							<FeatureCard
-								key={feature.id}
+							
 								iconPath={feature.iconPath}
 								feature={feature.feature}
 								desc={feature.desc}
