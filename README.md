@@ -1,16 +1,77 @@
-# React + Vite
+#  FlowDesk — Ticket Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FlowDesk is a modern **ticket management system** built with **React** and **TailwindCss**, designed to help teams handle customer requests efficiently.  
+It allows users to **create, read, update, and delete (CRUD) tickets**, and includes **authentication** with local storage persistence.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Features
 
-## React Compiler
+-  **User Authentication**
+  - Sign up, log in, and log out with persistent sessions.
+-  **Ticket Management**
+  - Create, edit, delete, and update ticket statuses.
+  - Statuses: `open`, `in_progress`, `closed`.
+-  **Local Storage Integration**
+  - Stores users and tickets locally per account.
+-  **Modern UI**
+  - Built with **Tailwind CSS** for responsive design.
+-  **Context API**
+  - Auth and Ticket states are managed globally using React Context.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Technology | Purpose |
+|-------------|----------|
+| **React (Vite)** | Frontend Framework |
+| **React Router** | Navigation and Routing |
+| **Tailwind CSS** | Styling |
+| **Context API** | State Management |
+| **Local Storage** | Persistent Data |
+| **Node.js / npm** | Package Management |
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/flowdesk.git
+cd flowdesk
+npm install
+npm run dev
+```
+
+---  
+
+
+##  Login & Sign-Up Info
+
+- New users can sign up from /sign-up.
+
+- Credentials are stored locally (not on a server).
+
+- Tickets are saved under each user’s local storage key.
+
+---
+
+## Environment Variables
+
+No external APIs are required — this app runs entirely in the browser using local storage.
+
+### Navigation
+## Page	             ## Route    
+- LandingPage	          /	    
+- Sign Up/Login 	   /sign-up	
+- Dashboard	        /dashboard	
+- Ticket Management 	/tickets	
+
+
+## Author
+## FlowDesk
+Developed by Stephanie
+📧 [emenikesteph@gmail.com]
+
