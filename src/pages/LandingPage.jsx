@@ -59,7 +59,7 @@ const LandingPage = () => {
 						efficiently. Here's how:
 					</p>
 				</header>
-				<ul className="list-none flex flex-col gap-(--space-sm) lg:gap-(--space-lg) justify-center md:flex-row md:flex-wrap mb-8">
+				<ul className="list-none flex flex-col gap-(--space-md) lg:gap-(--space-lg) justify-center md:flex-row md:flex-wrap mb-8">
 					{features.map((feature) => (
 						<li 	key={feature.id}>
 							<FeatureCard

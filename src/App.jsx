@@ -11,11 +11,11 @@ function App() {
 	const { isAuthenticated } = useAuth();
 	const location = useLocation();
 	const showNavBar =
-		location.pathname !== "/dashboard" || location.pathname !== "/tickets";
+		location.pathname === "/dashboard" || location.pathname === "/tickets";
 
 	return (
 		<>
-			{showNavBar && <NavBar />}
+			{!showNavBar && <NavBar />}
 
 			<Routes>
 				<Route index element={<LandingPage />} />
