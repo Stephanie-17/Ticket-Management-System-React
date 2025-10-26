@@ -39,8 +39,8 @@ It allows users to **create, read, update, and delete (CRUD) tickets**, and incl
 ### 1️ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/flowdesk.git
-cd flowdesk
+git clone https://github.com/Stephanie-17/Ticket-Management-System-React.git
+cd Ticket-Management-System-React
 npm install
 npm run dev
 ```
