@@ -19,7 +19,7 @@ function App() {
 
 			<Routes>
 				<Route index element={<LandingPage />} />
-				<Route path="/sign-up" element={<AuthForm />} />
+				<Route path="/sign-up" element={isAuthenticated ? <Dashboard /> :<AuthForm />} />
 				<Route
 					path="/dashboard"
 					element={isAuthenticated ? <Dashboard /> : <AuthForm />}
