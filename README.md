@@ -62,12 +62,9 @@ npm run dev
 
 No external APIs are required — this app runs entirely in the browser using local storage.
 
+
 ### Navigation
-## Page	             ## Route    
-- LandingPage	          /	    
-- Sign Up/Login 	   /sign-up	
-- Dashboard	        /dashboard	
-- Ticket Management 	/tickets
+
 |Page               |   Route     |
 |-------------------|-------------|
 |LandingPage        |     /       |
@@ -78,7 +75,7 @@ No external APIs are required — this app runs entirely in the browser using lo
 
 
 ## Author
-## FlowDesk
+FlowDesk
 Developed by Stephanie
 📧 [emenikesteph@gmail.com]
 
