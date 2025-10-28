@@ -1,9 +1,9 @@
 import React from "react";
 import FeatureCard from "../components/FeatureCard";
 import {  useNavigate } from "react-router-dom";
-import automatedIcon from './assets/images/automated-icon.svg';
-import unifiedIcon from './assets/images/unified-icon.svg';
-import analyticsIcon from './assets/images/analytics-icon.svg';
+import automatedIcon from '../assets/images/automated-icon.svg';
+import unifiedIcon from '../assets/images/unified-icon.svg';
+import analyticsIcon from '../assets/images/analytics-icon.svg';
 
 const LandingPage = () => {
 	const navigate = useNavigate()
