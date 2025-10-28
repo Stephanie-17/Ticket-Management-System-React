@@ -1,25 +1,28 @@
 import React from "react";
 import FeatureCard from "../components/FeatureCard";
 import {  useNavigate } from "react-router-dom";
+import automatedIcon from './assets/images/automated-icon.svg';
+import unifiedIcon from './assets/images/unified-icon.svg';
+import analyticsIcon from './assets/images/analytics-icon.svg';
 
 const LandingPage = () => {
 	const navigate = useNavigate()
 	const features = [
 		{
 			id: 1,
-			iconPath: "/automated-icon.svg",
+			iconPath: automatedIcon,
 			feature: "Automated Ticket Routing",
 			desc: "Eliminate manual sorting. FlowDesk automatically assigns tickets to the right team or agent based on priority, topic, and workload. We ensure that every request is handled by the right expert.",
 		},
 		{
 			id: 2,
-			iconPath: "/unified-icon.svg",
+			iconPath: unifiedIcon,
 			feature: "Unified Communication Hub",
 			desc: "Keep every conversation in one place. Email, chat, and internal notes all live within FlowDesk, giving your team full context and your customers faster, more personalized responses.",
 		},
 		{
 			id: 3,
-			iconPath: "/analytics-icon.svg",
+			iconPath: analyticsIcon,
 			feature: "Actionable Analytics",
 			desc: "Track performance, measure response times, and uncover trends with intuitive analytics dashboards. FlowDesk turns data into insights you can act on to continuously improve service quality.",
 		},
